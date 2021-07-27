@@ -10,27 +10,39 @@
     <header>
      <div>제주맥주</div>
      <div>
-         LOGIN JOIN
+         <a href="login.html">LOGIN</a>
+         <a href="join.html">JOIN</a>
     </div>
 </header>
 
 <nav>
     <ul>
-        <li>EVENT</li>
-        <li>ABOUT US</li>
-        <li>SHOP</li> 
-        <li>NEWS</li>
-        <li>CONTACT</li>
+        <li><a href="index.html">EVENT</a></li>
+        <li><a href="about_us">ABOUT US</a></li>
+        <li><a href="shop.html">SHOP</a></li> 
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
     </ul>
 </nav>
 
+<aside>
+    <div>
+        <img src="./img/share.png" width="50">
+        <img src="./img/up.png" width="50">
+    </div>
+</aside>
+
+<video src="./videos/about_us.mp4" width="100%" playsinline autoplay muted loop>
+    이 브라우저는 지원하지 않습니다.
+</video>
+
     <main>
         <div>
-            <div>ABOUT US</div>
-            <div>OUR TEAM</div>
+            <div><a href="#about_us">ABOUT US</a></div>
+            <div><a href="#our_team">OUR TEAM</a></div>
         </div>
 
-        <article>
+        <article id = "about_us">
             <h1><b>ABOUT US</b></h1>
             <section>
                 <h3><b>WE ARE</b></h3>
@@ -46,8 +58,12 @@
                 공장이 아닌 양조장을<br>
                 제조 회사를 넘어 문화 기업을 만들며<br>
                 한국 맥주 시장을 새롭게 선도합니다.<br><br>
+                <div>
+                    <img src="./img/about1.png" width="100%">
+                </div>
             </section>
-
+            
+        
             <section>
                 <h1><b>ACCOMPLISHMENTS</b></h1>
                 <p>
@@ -71,14 +87,17 @@
                 <strong>현대카드, 배틀그라운드, 이니스프리, 하이랜드파크 등과의 콜라보레이션</strong>
             </section>
             <section>
-                MISSION
+                <div>
+                    <img src="./img/about2.png">
+                    <h2>MISSION</h2>
 
-                한국 크래프트 맥주의 선구자로 좋은 맥주를 통해
-                맥주 미식문화를 창조합니다.
+                    한국 크래프트 맥주의 선구자로 좋은 맥주를 통해<br>
+                    맥주 미식문화를 창조합니다.
+                </div>
+                
             </section>
-        </article>
 
-        <article>
+        <article id="our_team">
             <h1>OUR TEAM</h1>
             <p>
                 맥주만 만드는 사람들이 아닙니다.<br>
@@ -86,38 +105,63 @@
             </p>
             
             <div>
+                <img src="./img/employee1.png">
                 <h4>차귀도 바다 낚시</h4>
                 백성종 / 영업
             </div>
             <div>
+                <img src="./img/employee2.png">
                 <h4>위 아더 챔피언</h4>
                 노현수 / 생산
             </div>
             <div>
+                <img src="./img/employee3.png">
                 <h4>고급 사교 스포츠 마작</h4>
                 권영 / 생산
             </div>
         </article>
 
-        <div>
+        <section>
             <h1>SPECIALTY</h1>
-            <h3><b>레시피</b></h3>
-            <p>
+            <div>
+                <img src="./img/icon1.png">
+                <h3><b>레시피</b></h3>
+              <p>
                 맥주 업게 최초 전 세계 세프들의<br>
                 오스카상인 제임스비어드상 수상자<br>
                 브루마스터 개릿 올리버의 <b>제주 위트 에일 레시피</b>
-            </p>
+             </p>
             
-            <p>뉴욕 NO.1 브루클린 브루어리 30년 양조 노하우</p>
-            <p>
-                15년 이상의 양조 경력을 보유한<br>
-                세계 반열의 브루어 다수 참여
-            </p>
+             <p>뉴욕 <b>NO.1</b> 브루클린 브루어리 <b>30년</b> 양조 노하우</p>
+             <p>
+                 <b>15년</b> 이상의 양조 경력을 보유한<br>
+                 세계 반열의 브루어 다수 참여
+              </p>
+
+            </div>
             
+            <div>
+                <img src="./img/icon2.png">
+                <h3><b>원료</b></h3>
+                <p>
+                    독일, 미국 등 현지 청정지역에서 재배한 <b>홉</b><br>
+                    프리미엄 유럽산 <b>맥아</b><br>
+                    제주도에서 직접 배양 및 관리하는 <b>효모</b><br>
+                </p>
+            </div>
 
-
-
-        </div>
+            <div>
+                <img src="./img/icon3.png">
+                <h3><b>기술과 과학</b></h3>
+                <p>
+                    브루클린 브루어리의 축적된 기술과<br>
+                    과학의 노하우 전수<br>
+                    유럽 최고의 양조설비로 고품질 맥주 생산<br><br>
+                    세계 각지에서 공수한 맥주<br>
+                    연구 측정 장비로 엄격한 품질 관리<br>
+                </p>
+            </div>
+        </section>
     </main>
 
     <footer>
