@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>예제</title>
+    </head>
+    <body>
+       <main>
+           <h2>상품 구성</h2>
+           <table border="1">
+               <caption>선물용과 가정용 상품 구성</caption>
+               <colgroup>
+                <col style="background-color: #aaa">
+                <col>
+                <col span="2" style="width:100px">
+            </colgroup>
+               <thead>
+                <tr>
+                    <th>용도</th><th>중량</th><th>개수</th><th>가격</th>
+                </tr>
+               </thead>
+              
+               <tbody>
+                <tr>
+                    <td rowspan="2">선물용</td><td>3kg</td><td>11~16과</td><td>35000원</td>
+                </tr>
+                <!-- rowspan쓰려면 아래것도 삭제해줘야함  -->
+                <tr>
+                    <td>3kg</td><td>11~16과</td><td>35000원</td>
+                </tr>
+               </tbody>
+               
+               <tfoot>
+                <tr>
+                    <td>가정용</td><td>5kg</td><td>11~15과</td><td>355000원</td>
+                </tr>
+               </tfoot>
+               
+
+           </table>
+       </main>
+    </body>
+</html>
+
+<!-- tr은 행, th는 열, td는 내부 내용, caption은 표의 제목  -->
+<!-- thead, tbody, tfoot 등을 작성, css를 적용하기 위함 -->
+<!-- colspan 오른쪽 방향, rowspan 아래쪽 방향  -->
