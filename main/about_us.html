@@ -3,13 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>HTML 기본 문서</title>
+
 </head>
 
 <body>
     <header>
      <div>제주맥주</div>
-     <div>
+     <div> 
+         <!-- display inline 적용해줘야함 -->
          <a href="login.html">LOGIN</a>
          <a href="join.html">JOIN</a>
     </div>
@@ -37,15 +40,16 @@
 </video>
 
     <main>
-        <div>
-            <div><a href="#about_us">ABOUT US</a></div>
-            <div><a href="#our_team">OUR TEAM</a></div>
-        </div>
+        <ul>
+            <li><a href="#about_us">ABOUT US</a></li>
+            <li><a href="#our_team">OUR TEAM</a></li>
+        </ul>
 
         <article id = "about_us">
-            <h1><b>ABOUT US</b></h1>
+            <h1>ABOUT US</h1>
+    
             <section>
-                <h3><b>WE ARE</b></h3>
+                <h2>WE ARE</h2>
                 왜 한국인들의 인생 맥주는 수입맥주일까?<br>
                 왜 소맥 문화가 아닌 맥주만의 문화가 없을까?<br>
                 왜 맥주가 탄생하는 과정을 보여주고 알려줄 수 없을까?<br>
@@ -65,7 +69,8 @@
             
         
             <section>
-                <h1><b>ACCOMPLISHMENTS</b></h1>
+                <h1>ACCOMPLISHMENTS</h1>
+                <h2>WE ARE</h2>
                 <p>
                     <strong>국내 최초 글로벌 크래프트 맥주사</strong><br>
                     <blockquote>미국 뉴욕 판매 1위 크래프트맥주사 브루클린 브루어리와의 아시아 첫 파트너십</blockquote>
@@ -86,7 +91,7 @@
                <!-- br대신에 p태그로 단락을 나눠줌 (좀더 깔끔해보임)-->
                 <strong>현대카드, 배틀그라운드, 이니스프리, 하이랜드파크 등과의 콜라보레이션</strong>
             </section>
-            <section>
+            <section><br>
                 <div>
                     <img src="./img/about2.png">
                     <h2>MISSION</h2>
@@ -96,36 +101,14 @@
                 </div>
                 
             </section>
-
-        <article id="our_team">
-            <h1>OUR TEAM</h1>
-            <p>
-                맥주만 만드는 사람들이 아닙니다.<br>
-                제주의 문화를 만들어가는 다양한 매력의 우리를 만나보세요.
-            </p>
-            
-            <div>
-                <img src="./img/employee1.png">
-                <h4>차귀도 바다 낚시</h4>
-                백성종 / 영업
-            </div>
-            <div>
-                <img src="./img/employee2.png">
-                <h4>위 아더 챔피언</h4>
-                노현수 / 생산
-            </div>
-            <div>
-                <img src="./img/employee3.png">
-                <h4>고급 사교 스포츠 마작</h4>
-                권영 / 생산
-            </div>
         </article>
 
+     <article>
         <section>
-            <h1>SPECIALTY</h1>
+            <h2>SPECIALTY</h2>
             <div>
                 <img src="./img/icon1.png">
-                <h3><b>레시피</b></h3>
+                <h3>레시피</h3>
               <p>
                 맥주 업게 최초 전 세계 세프들의<br>
                 오스카상인 제임스비어드상 수상자<br>
@@ -142,7 +125,7 @@
             
             <div>
                 <img src="./img/icon2.png">
-                <h3><b>원료</b></h3>
+                <h3>원료</h3>
                 <p>
                     독일, 미국 등 현지 청정지역에서 재배한 <b>홉</b><br>
                     프리미엄 유럽산 <b>맥아</b><br>
@@ -152,7 +135,7 @@
 
             <div>
                 <img src="./img/icon3.png">
-                <h3><b>기술과 과학</b></h3>
+                <h3>기술과 과학</h3>
                 <p>
                     브루클린 브루어리의 축적된 기술과<br>
                     과학의 노하우 전수<br>
@@ -162,6 +145,32 @@
                 </p>
             </div>
         </section>
+    </article><br><hr>
+
+        <article id="our_team">
+            <h1>OUR TEAM</h1>
+            <p>
+                맥주만 만드는 사람들이 아닙니다.<br>
+                제주의 문화를 만들어가는 다양한 매력의 우리를 만나보세요.
+            </p><br>
+            
+            <div>
+                <img src="./img/employee1.png"><br>
+                <b>차귀도 바다 낚시</b><br>
+                백성종 / 영업<br>
+            </div>
+            <div>
+                <img src="./img/employee2.png"><br>
+                <b>위 아더 챔피언</b><br>
+                노현수 / 생산
+            </div>
+            <div>
+                <img src="./img/employee3.png"><br>
+                <b>고급 사교 스포츠 마작</b><br>
+                권영 / 생산
+            </div>
+        </article>
+
     </main>
 
     <footer>

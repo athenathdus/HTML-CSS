@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("../font/Gotham-Black.woff2") format("woff2"),
+    url("../font/Gotham-Black.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../font/Gotham-Bold.woff2") format("woff2"),
+    url("../font/Gotham-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  src: url("../font/SpoqaHanSansNeo-Medium.woff2") format("woff2"),
+    url("../font/SpoqaHanSansNeo-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  src: url("../font/SpoqaHanSansNeo-Bold.woff2") format("woff2"),
+    url("../font/SpoqaHanSansNeo-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: "Gotham", "Spoqa Han Sans Neo";
+  color: #666;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 40px;
+  color: rgb(95, 204, 226);
+  font-weight: bold;
+}
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+h3 {
+  color: rgb(95, 204, 226);
+}
+p {
+  font-size: 15px;
+}
+
+table {
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td,
+th {
+  padding: 10px;
+  text-align: center;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+article,
+div {
+  text-align: center;
+}
+
+footer {
+  font-size: 0.7em;
+}

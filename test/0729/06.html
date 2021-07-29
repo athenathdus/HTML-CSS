@@ -5,9 +5,83 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <title>css</title>
+        
+
+        <style>
+
+            @font-face {
+            font-family:'Elice DigitalBaeum';
+            src: url('../font/EliceDigitalBaeum.woff2') format('woff2'),
+                 url('../font/EliceDigitalBaeum.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+            }  
+
+            *{
+                letter-spacing:0.1em;
+                font-family:"Elice DigitalBaeum";
+                
+            }
+            h1{
+                color:burlywood;
+                text-align:center;
+            }
+            h2{
+                color:cornflowerblue;
+            }
+            a{
+                color:skyblue;
+                text-decoration:none;
+            }
+            p{
+                color:darkcyan;
+                text-align:justify;
+                line-height:2.0;
+                text-decoration:none;
+            }
+            blockquote{
+                text-align:justify;
+                line-height:1.3;
+                text-align:underline;
+                clear:both;
+            }
+            ol{
+                list-style-type:circle;
+                list-style-position:inside;
+                /* list-style-image:url('../images/button.png') */
+            }
+            table{
+                caption-side:top;
+                border: 1px solid black;
+            }
+            td,th{
+                border: 1px solid black;
+                padding:10px;
+                text-align:center;
+            }
+            caption{
+                font-weight:bold;
+            }
+            div{
+                border: 1px solid #222;
+            }
+            #container{
+                width:600px;
+                border:none;
+            }
+            img{
+                float:left;
+                margin-right:20px;
+            }
+
+        </style>
     </head>
     <body>
+        <div id="container">
+        <div id="description">
        <h1>탐라국 입춘굿</h1>
+       <img src="../images/ipchun.jpg">
        <p>
            탐라국 입춘굿놀이는 전국적으로 유일하게 입춘날 벌어지는 축제이자<br>
            제주도의 문화축제 중에서 유일하게 전통시대부터 존재했던 축제이다. <br>
@@ -24,6 +98,8 @@
         <p>
             <a href="http://tig0204.kr/index.php" target="_blank">자세한 정보보기</a>
         </p>
+    </div>
+        <div id="schedule" >
         <h2>일정</h2>
         <ol type="1">
             <li>입춘맞이: 1/27~1/31</li>
@@ -32,5 +108,32 @@
             <li>열림굿: 2/3</li>
             <li>입춘굿: 2/4</li>
         </ol>
+    </div>
+    <div id="food">
+        <table>
+            <caption>먹거리 장소</caption>
+            <colgroup>
+            <col class="bold-text">
+               <col>
+                <col>
+            </colgroup>
+
+            <tbody>
+                <tr>
+                    <td>입춘 천낭 국수</td><td>11-16</td><td>목관아 주차장</td>
+                </tr>
+                <tr>
+                    <td>제주 향토 음식</td><td>10:30-17:00</td><td>관덕청 마당</td>
+                </tr>
+                <tr>
+                    <td>입춘 주전부리</td><td>10:30-17:30</td><td>관덕청 마당</td>
+                </tr>
+                <tr>
+                    <td>차 나눔 </td><td>10:30=17:00</td><td>관덕청 마당</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
     </body>
 </html>

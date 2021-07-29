@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>HTML 기본 문서</title>
 </head>
 
@@ -35,17 +36,17 @@
 
     <main>
         <div>
-            JOIN<br>
+            <h1>JOIN</h1>
             안녕하세요 제주맥주입니다.
-        </div>
+        </div><br>
         <div>
-            <form>
+            <form id="join_agree">
             <div>
                 <label><input type="checkbox" id="agree_all">이용약관, 개인정보 수집 및 이용에 모두 동의합니다.</label><br>
             </div>
          <div>  
          <input type="checkbox" name="agree_terms" id="agree_terms">
-         <label for ="agree_terms">이용약관 동의(필수)</label><br>
+         <label for ="agree_terms">이용약관 동의(필수)</label><br><br>
         
          <textarea cols="40" rows="10" readonly>
         제1조 (목적)
@@ -60,13 +61,13 @@
         ④ ‘비회원’이라 함은 회원에 가입하지 않고 “몰”이 제공하는 서비스를 이용하는 자를 말합니다.
 
         </textarea>
-        </div> 
+        </div> <br>
         <div>
             마케팅 활용 동의 및 광고 수신 동의<br>
-            서비스와 관련된 신상품 소식, 이벤트 안내, 고객 혜택 등 다양한 정보를 제공합니다.    
+            서비스와 관련된 신상품 소식, 이벤트 안내, 고객 혜택 등 다양한 정보를 제공합니다.<br>    
             <input type="checkbox" id="marketing_sms_agree">SMS 수신 동의 (선택)<br>
             <input type="checkbox" id="marketing_email_agree">E-Mail 수신 동의 (선택)<br>
-        </div>
+        </div><br>
 
         <div>
             <input type="reset" value="취소">
