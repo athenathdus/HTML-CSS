@@ -9,85 +9,92 @@
 
 <body>
     <header>
-     <div>제주맥주</div>
-     <div>
-         <a href="login.html">LOGIN</a>
-         <a href="join.html">JOIN</a>
-    </div>
-</header>
+        <div id="logo">
+            <h1>제주맥주</h1>
+        </div>
+        <div id="user">
+            <a href="login.html">LOGIN</a>
+            <a href="join.html">JOIN</a>
+        </div>
+    </header>
 
-<nav>
-    <ul>
-        <li><a href="index.html">EVENT</a></li>
-        <li><a href="about_us">ABOUT US</a></li>
-        <li><a href="shop.html">SHOP</a></li> 
-        <li><a href="news.html">NEWS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-</nav>
+    <nav class="clear">
+        <ul>
+            <li><a href="index.html">EVENT</a></li>
+            <li><a href="about_us">ABOUT US</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
 
-<aside>
-    <div>
-        <img src="./img/share.png" width="50">
-        <img src="./img/up.png" width="50">
-    </div>
-</aside>
+    <aside>
+        <div>
+            <img src="./img/share.png" width="50"><br>
+            <img src="./img/up.png" width="50">
+        </div>
+    </aside>
 
     <main>
 
         <section>
             <video src="./videos/event.mp4" width="100%" playsinline autoplay muted loop>
-            이 브라우저는 지원하지 않습니다.
-        </video>
+                이 브라우저는 지원하지 않습니다.
+            </video>
         </section>
 
         <section>
             <article>
-                제주맥주 광고 이벤트
-                <div>
-                    <img src="./img/bg1.png" width="100%">
-                    <img src="./img/event_message.png">
-                    <img src="./img/suffer.png">   
+                <div class="event_image">
+                    <p id="event">제주맥주 광고 이벤트</p>
+                    <div>
+                        <img id="bg" src="./img/bg1.png" width="100%">
+                        <img src="./img/event_message.png">
+                        <img src="./img/suffer.png">
+                    </div>
+                    <div class="space"></div>
+                    <div class="event_image">
+                        <img src="./img/img1.jpg" width="350px">
+                        <p>히든클리프 호텔 숙박권</p>
+                    </div>
+                    <div class="event_image">
+                        <img src="./img/img2.jpg" width="350px">
+                        <p>제주도 왕복 비행기 항공권</p>
+                    </div>
+                    <div class="event_image">
+                        <img src="./img/img3.jpg" width="350px">
+                        <p>제주맥주 양조장 투어권</p>
+                    </div>
+                    <div class="space"></div>
                 </div>
-                <div>
-                    <img src="./img/img1.jpg">
-                    <p>히든클리프 호텔 숙박권</p>
-                </div>
-                <div>
-                    <img src="./img/img2.jpg">
-                    <p>제주도 왕복 비행기 항공권</p>
-                </div>
-                <div>
-                    <img src="./img/img3.jpg">
-                    <p>제주맥주 양조장 투어권</p>
-                </div>
-               
+
             </article>
 
             <article>
-                
+
                 <table>
                     <colgroup>
-                    <col><col>
+                        <col>
+                        <col>
                     </colgroup>
-                <tr>
-                    <td>참여방법</td>
-                    <td>빈칸에 들어갈 정답을 맞춰주세요! 힌트는 광고 영상 속에 있어요.</td>
-                </tr>
-                
-                <tr>
-                    <td>이벤트 기간</td>
-                    <td>2021.07.16 - 2021.7.31</td>
-                </tr>
-                
-                <tr>
-                    <td>발표일</td>
-                    <td>2021.08.02</td>
-                </tr>
-                
+                    <tr>
+                        <td>참여방법</td>
+                        <td>빈칸에 들어갈 정답을 맞춰주세요!<br> 힌트는 광고 영상 속에 있어요.</td>
+                    </tr>
+
+                    <tr>
+                        <td>이벤트 기간</td>
+                        <td>2021.07.16 - 2021.7.31</td>
+                    </tr>
+
+                    <tr>
+                        <td>발표일</td>
+                        <td>2021.08.02</td>
+                    </tr>
+
                 </table><br>
-            
-                본 이벤트는 조기 마감될 수 있습니다. 
+
+                본 이벤트는 조기 마감될 수 있습니다.
 
             </article>
 
@@ -96,15 +103,15 @@
                 <h2>QUIZ</h2>
                 <div>
                     <p>
-                    4개 퀴즈를 전부 맞추면 선물이 펑펑!<br>
-                    광고 영상 속에 힌트가 있어요.
-                    </p>   
+                        4개 퀴즈를 전부 맞추면 선물이 펑펑!<br>
+                        광고 영상 속에 힌트가 있어요.
+                    </p>
                 </div>
                 <div>
                     <img src="./img/bg3.png" width="100%">
                 </div>
                 <div>
-                    <img src="./img/start_btn.png"> 
+                    <img src="./img/start_btn.png">
                 </div>
             </article>
         </section>
@@ -113,10 +120,11 @@
     <footer>
         <div>제주맥주 주식회사 대표이사 XXX</div>
         <div>
-            주소: 서울 특별시 서초구.. 
-            대표이사: 박소연  개인정보관리책임자 : 박소연
+            주소: 서울 특별시 서초구..
+            대표이사: 박소연 개인정보관리책임자 : 박소연
         </div>
         <div> COPYRIGHT c 2021 ALL RIGHTS RESERVED</div>
     </footer>
 </body>
+
 </html>

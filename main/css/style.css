@@ -1,3 +1,4 @@
+/* font */
 @font-face {
   font-family: "Gotham";
   src: url("../font/Gotham-Black.woff2") format("woff2"),
@@ -39,33 +40,76 @@
   color: #666;
   font-size: 1em;
   line-height: 1.5;
+  margin: 0 auto;
+
 }
+
+/* 공통 */
+
 header {
-  width: 1500px;
+  width: 1000px;
   height: 100px;
 }
 
 #logo {
+  color:rgb(95, 204, 226);
   float: left;
   width: 90%;
+  padding-top:40px;
 }
 
 #user {
-  float: right;
   width: 10%;
+  float: left;
   padding-top: 80px;
 }
+
 nav {
-  height: 200px;
-  margin-left: 500px;
+  height:40px;
+  margin-top:15px;
+  margin-left:70px;
 }
+
 ul {
   list-style-type: none;
 }
+
 li {
   display: inline-block;
-  padding: 20px;
-  float: left;
+  /* padding:30px;
+  margin: 0 20px; */
+  padding-left: 40px;
+  padding-right:35px;
+}
+
+aside{
+  position:fixed;
+  bottom:50px;
+  right:20px;
+  z-index:10;
+}
+.sharebtn{
+  background-color:rgb(95, 204, 226);
+  width:50px;
+  height:50px;
+  border-radius:50% 50%
+}
+.upbtn{
+  background-color:lightgrey;
+  width:50px;
+  height:50px;
+  border-radius:50% 50%
+}
+.white-font{
+  color:white;
+}
+
+.clear{
+  clear:both;
+}
+
+.space{
+  margin:100px;
 }
 
 h1 {
@@ -81,26 +125,13 @@ h3 {
   color: rgb(95, 204, 226);
 }
 p {
-  font-size: 20px;
-  margin: left;
-}
-
-table {
-  border-top: 2px solid #444;
-  border-bottom: 2px solid #444;
-  margin: auto;
-}
-
-td,
-th {
-  padding: 10px;
   font-size: 15px;
+  margin: left;
 }
 a {
   display: inline-block;
   text-decoration: none;
 }
-
 article,
 div {
   text-align: center;
@@ -109,6 +140,105 @@ div {
 footer {
   font-size: 0.7em;
 }
+
+/* about_us */
+
+#padding{
+  padding-bottom:55px;
+}
+
+.table_block div{
+  display: inline-block;
+  padding-right:10px;
+}
+.about_us_center{
+  margin : 0 auto 0 auto;
+}
+
+.image-text-box{
+  position:relative;
+}
+
+.inner-text{
+  width:100%;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+.table_block div{
+  padding:15px;
+}
+
+.about_us{
+  padding:0;
+  display: inline-block;
+}
+
+.about_us li{
+  margin: 0px 50px;
+  background-color:rgb(95, 204, 226);
+ border-radius:20px;
+ 
+}
+
+.about_us a{
+  color:white;
+  margin:10px;
+  
+}
+
+/* news */
+
+table {
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
+  border-collapse:collapse;
+  margin: auto;
+}
+td{
+  width:400px;
+}
+td,
+th {
+  padding: 15px;
+  font-size:20px;
+}
+.newstable td{
+  border-bottom:0.3px solid #444;
+  font-size: 13px;
+}
+
+/* shop */
+
+.shop_image div{
+  display: inline-block;
+  padding-right:10px;
+}
+#comesoon{
+  background-color:rgb(112, 199, 228);
+  width:410px;
+  height:406px;
+  padding:0px;
+  
+
+}
+
+/* index */
+.event_image{
+  display: inline-block;
+  padding-right:10px;
+}
+.event_area{
+  background:url("./img/bg1.png");
+}
+#event{
+  margin: 0px 50px;
+  background-color:rgb(95, 204, 226);
+ border-radius:20px;
+}
+
 #join_agree {
   text-align: left;
 }

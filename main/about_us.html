@@ -10,51 +10,57 @@
 
 <body>
     <header>
-     <div>제주맥주</div>
-     <div> 
-         <!-- display inline 적용해줘야함 -->
-         <a href="login.html">LOGIN</a>
-         <a href="join.html">JOIN</a>
-    </div>
-</header>
+        <div id="logo">
+            <h1>제주맥주</h1>
+        </div>
+        <div id="user">
+            <a href="login.html">LOGIN</a>
+            <a href="join.html">JOIN</a>
+        </div>
+    </header>
 
-<nav>
-    <ul>
-        <li><a href="index.html">EVENT</a></li>
-        <li><a href="about_us">ABOUT US</a></li>
-        <li><a href="shop.html">SHOP</a></li> 
-        <li><a href="news.html">NEWS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-</nav>
+    <nav class="clear">
+        <ul>
+            <li><a href="index.html">EVENT</a></li>
+            <li><a href="about_us">ABOUT US</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
 
-<aside>
-    <div>
-        <img src="./img/share.png" width="50">
-        <img src="./img/up.png" width="50">
-    </div>
-</aside>
+    <aside>
+        <div>
+            <img src="./img/share.png" width="50"><br>
+            <img src="./img/up.png" width="50">
+        </div>
+    </aside>
 
-<video src="./videos/about_us.mp4" width="100%" playsinline autoplay muted loop>
-    이 브라우저는 지원하지 않습니다.
-</video>
+    <video src="./videos/about_us.mp4" width="100%" playsinline autoplay muted loop>
+        이 브라우저는 지원하지 않습니다.
+    </video>
+    <div class="space"></div>
 
     <main>
-        <ul>
-            <li><a href="#about_us">ABOUT US</a></li>
-            <li><a href="#our_team">OUR TEAM</a></li>
-        </ul>
+        <div class="about_us_center">
+            <ul class="about_us">
+                <li><a href="#about_us">ABOUT US</a></li>
+                <li><a href="#our_team">OUR TEAM</a></li>
+            </ul>
+        </div>
 
-        <article id = "about_us">
+        <div class="space"></div>
+
+        <article id="about_us">
             <h1>ABOUT US</h1>
-    
+
             <section>
-                <h2>WE ARE</h2>
+                <h2>WE ARE</h2><br>
                 왜 한국인들의 인생 맥주는 수입맥주일까?<br>
                 왜 소맥 문화가 아닌 맥주만의 문화가 없을까?<br>
                 왜 맥주가 탄생하는 과정을 보여주고 알려줄 수 없을까?<br>
                 왜 우리나라에는 꼭 가보고 싶은 양조장이 없을까?<br><br>
-                
+
                 제주맥주가 태어난 이유인 이 질문들에 대한 답이<br>
                 우리가 하는 모든 일입니다.<br><br>
 
@@ -66,120 +72,133 @@
                     <img src="./img/about1.png" width="100%">
                 </div>
             </section>
-            
-        
+
+
             <section>
-                <h1>ACCOMPLISHMENTS</h1>
-                <h2>WE ARE</h2>
+                <div class="space"></div>
+                <h2>ACCOMPLISHMENTS</h2><br>
+
                 <p>
                     <strong>국내 최초 글로벌 크래프트 맥주사</strong><br>
-                    <blockquote>미국 뉴욕 판매 1위 크래프트맥주사 브루클린 브루어리와의 아시아 첫 파트너십</blockquote>
-                </p>
+                <blockquote>미국 뉴욕 판매 1위 크래프트맥주사 브루클린 브루어리와의 아시아 첫 파트너십</blockquote>
+                </p><br>
                 <P>
                     <strong>맥주업계 최초 중소벤처기업부 '예비 유니콘' 선정</strong>
-                </P>
+                </P><br>
                 <P>
                     <strong>누적 투자액 600억 돌파 (2020년 기준)</strong>
-                </P>
+                </P><br>
                 <P>
                     <strong>런칭 후 매년 200% 이상 매출 성장 (2020년 기준)</strong>
-                </P>
-                <p> 
+                </P><br>
+                <p>
                     <strong>제주 양조장 방문객 누적 약 10만 명 (2020년 기준)</strong><br>
-                    <blockquote>제주도의 새로운 관광 명소로 자리매김</blockquote>
-                </p>
-               <!-- br대신에 p태그로 단락을 나눠줌 (좀더 깔끔해보임)-->
+                <blockquote>제주도의 새로운 관광 명소로 자리매김</blockquote>
+                </p><br>
+                <!-- br대신에 p태그로 단락을 나눠줌 (좀더 깔끔해보임)-->
                 <strong>현대카드, 배틀그라운드, 이니스프리, 하이랜드파크 등과의 콜라보레이션</strong>
-            </section>
+            </section><br>
             <section><br>
-                <div>
+                <div class="image-text-box">
                     <img src="./img/about2.png">
-                    <h2>MISSION</h2>
-
-                    한국 크래프트 맥주의 선구자로 좋은 맥주를 통해<br>
-                    맥주 미식문화를 창조합니다.
+                    <div class="inner-text">
+                        <h2 class="white-font">MISSION</h2>
+                        <p class="white-font">
+                            한국 크래프트 맥주의 선구자로 좋은 맥주를 통해<br>
+                            맥주 미식문화를 창조합니다.
+                        </p>
+                    </div>
                 </div>
-                
+
             </section>
         </article>
 
-     <article>
-        <section>
-            <h2>SPECIALTY</h2>
-            <div>
-                <img src="./img/icon1.png">
-                <h3>레시피</h3>
-              <p>
-                맥주 업게 최초 전 세계 세프들의<br>
-                오스카상인 제임스비어드상 수상자<br>
-                브루마스터 개릿 올리버의 <b>제주 위트 에일 레시피</b>
-             </p>
-            
-             <p>뉴욕 <b>NO.1</b> 브루클린 브루어리 <b>30년</b> 양조 노하우</p>
-             <p>
-                 <b>15년</b> 이상의 양조 경력을 보유한<br>
-                 세계 반열의 브루어 다수 참여
-              </p>
+        <article>
+            <section>
+                <div class="space"></div>
+                <h2>SPECIALTY</h2><br><br>
+                <div class="table_block">
+                    <div class="table_block">
+                        <img src="./img/icon1.png" width="150">
+                        <h3>레시피</h3>
 
-            </div>
-            
-            <div>
-                <img src="./img/icon2.png">
-                <h3>원료</h3>
-                <p>
-                    독일, 미국 등 현지 청정지역에서 재배한 <b>홉</b><br>
-                    프리미엄 유럽산 <b>맥아</b><br>
-                    제주도에서 직접 배양 및 관리하는 <b>효모</b><br>
-                </p>
-            </div>
+                        맥주 업게 최초 전 세계 세프들의<br>
+                        오스카상인 제임스비어드상 수상자<br>
+                        브루마스터 개릿 올리버의 <b>제주 위트 에일 레시피</b><br>
+                        뉴욕 <b>NO.1</b> 브루클린 브루어리 <b>30년</b> 양조 노하우<br>
 
-            <div>
-                <img src="./img/icon3.png">
-                <h3>기술과 과학</h3>
-                <p>
-                    브루클린 브루어리의 축적된 기술과<br>
-                    과학의 노하우 전수<br>
-                    유럽 최고의 양조설비로 고품질 맥주 생산<br><br>
-                    세계 각지에서 공수한 맥주<br>
-                    연구 측정 장비로 엄격한 품질 관리<br>
-                </p>
-            </div>
-        </section>
-    </article><br><hr>
+                        <b>15년</b> 이상의 양조 경력을 보유한<br>
+                        세계 반열의 브루어 다수 참여
+
+
+                    </div>
+
+                    <div class="table_block" id="padding">
+                        <img src="./img/icon2.png" width="150">
+                        <h3>원료</h3>
+
+                        독일, 미국 등 현지 청정지역에서 재배한 <b>홉</b><br>
+                        프리미엄 유럽산 <b>맥아</b><br>
+                        제주도에서 직접 배양 및 관리하는 <b>효모</b><br>
+                        <div id="padding"></div>
+
+                    </div>
+
+                    <div class="table_block">
+                        <img src="./img/icon3.png" width="150">
+                        <h3>기술과 과학</h3>
+
+                        브루클린 브루어리의 축적된 기술과<br>
+                        과학의 노하우 전수<br>
+                        유럽 최고의 양조설비로 고품질 맥주 생산<br><br>
+                        세계 각지에서 공수한 맥주<br>
+                        연구 측정 장비로 엄격한 품질 관리<br>
+
+                    </div>
+                </div>
+            </section>
+        </article><br>
+
+        <div class="clear"></div>
+
 
         <article id="our_team">
-            <h1>OUR TEAM</h1>
-            <p>
-                맥주만 만드는 사람들이 아닙니다.<br>
-                제주의 문화를 만들어가는 다양한 매력의 우리를 만나보세요.
-            </p><br>
-            
-            <div>
-                <img src="./img/employee1.png"><br>
-                <b>차귀도 바다 낚시</b><br>
-                백성종 / 영업<br>
-            </div>
-            <div>
-                <img src="./img/employee2.png"><br>
-                <b>위 아더 챔피언</b><br>
-                노현수 / 생산
-            </div>
-            <div>
-                <img src="./img/employee3.png"><br>
-                <b>고급 사교 스포츠 마작</b><br>
-                권영 / 생산
+            <div class="table_block">
+                <h1>OUR TEAM</h1>
+                <p>
+                    맥주만 만드는 사람들이 아닙니다.<br>
+                    제주의 문화를 만들어가는 다양한 매력의 우리를 만나보세요.
+                </p><br>
+
+                <div class="table_block">
+                    <img src="./img/employee1.png"><br>
+                    <b>차귀도 바다 낚시</b><br>
+                    백성종 / 영업<br>
+                </div>
+                <div class="table_block">
+                    <img src="./img/employee2.png"><br>
+                    <b>위 아더 챔피언</b><br>
+                    노현수 / 생산
+                </div>
+                <div class="table_block">
+                    <img src="./img/employee3.png"><br>
+                    <b>고급 사교 스포츠 마작</b><br>
+                    권영 / 생산
+                </div>
             </div>
         </article>
-
+        <div class="clear"></div>
+        <div class="space"></div>
     </main>
 
     <footer>
         <div>제주맥주 주식회사 대표이사 XXX</div>
         <div>
-            주소: 서울 특별시 서초구.. 
-            대표이사: 박소연  개인정보관리책임자 : 박소연
+            주소: 서울 특별시 서초구..
+            대표이사: 박소연 개인정보관리책임자 : 박소연
         </div>
         <div> COPYRIGHT c 2021 ALL RIGHTS RESERVED</div>
     </footer>
 </body>
+
 </html>
