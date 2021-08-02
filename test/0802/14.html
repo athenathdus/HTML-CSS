@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        .navi ul {
+            list-style-type: none;
+        }
+
+        .navi ul li {
+            float: left;
+            width: 150px;
+            padding: 10px;
+        }
+
+        .navi a:link,
+        .navvi a:visited {
+            display: block;
+            font-size: 14px;
+            color: #000;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navi a:hover {
+            color: #fff;
+            background-color: #222;
+        }
+
+        p {
+            clear: left;
+        }
+
+        p a:link,
+        p a:visited {
+            text-decoration: none;
+            color: red;
+        }
+
+        p a:hover,
+        p a:focus {
+            text-decoration: underline;
+        }
+
+        .text-area::section {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav class="navi">
+            <ul>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+            </ul>
+        </nav>
+        <p>
+            <a href="#">일반링크</a>s
+        </p>
+        <div class="text-area">
+            동해물과 백두산이 마르고 닳도록
+        </div>
+    </main>
+</body>
+
+</html>

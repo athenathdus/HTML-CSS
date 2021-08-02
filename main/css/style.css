@@ -141,6 +141,43 @@ footer {
   font-size: 0.7em;
 }
 
+.inline{
+  display:inline-block;
+}
+#text-align{
+  text-align:center;
+}
+.align_left{
+  text-align:left;
+}
+.align_right{
+  text-align:right;
+}
+
+a:link, a:visited{
+  text-decoration:none;
+}
+a:hover, a:focus{
+  text-decoration:underline;
+  color: rgb(95, 204, 226);
+}
+.logo a:focus, .logo a:hover{
+  text-decoration:none;
+}
+
+/* footer */
+footer{
+  margin:30px;
+  color:grey;
+}
+footer div{
+  line-height:22px;
+}
+footer div:first-child{
+  font-size:20px;
+}
+
+
 /* about_us */
 
 #padding{
@@ -180,13 +217,13 @@ footer {
   margin: 0px 50px;
   background-color:rgb(95, 204, 226);
  border-radius:20px;
- 
+
 }
 
 .about_us a{
   color:white;
   margin:10px;
-  
+
 }
 
 /* news */
@@ -212,33 +249,178 @@ th {
 
 /* shop */
 
-.shop_image div{
-  display: inline-block;
-  padding-right:10px;
-}
-#comesoon{
-  background-color:rgb(112, 199, 228);
-  width:410px;
-  height:406px;
-  padding:0px;
-  
+.shop_inner_image{
+  position:relative;
 
+}
+.shop_inner_text1{
+  position:absolute;
+  left:35%;
+  top:10%;
+  transform:translate(-50%, -50%);
+
+}
+.shop_inner_text2{
+  position:absolute;
+  left:35%;
+  top:15%;
+  transform:translate(-50%, -50%);
+  font-size:22px;
+}
+.shop_inner_text3{
+  position:absolute;
+  left:35%;
+  top:25%;
+  transform:translate(-50%, -50%);
+}
+
+.shop_inner_text4{
+  position:absolute;
+  top: 40%;
+  transform:translateX(50%);
+}
+
+.shop_image > div{
+  display: inline-block;
+  width: 49%;
+  margin-top: -10px;
+  margin-right: -5px;
+}
+.shop_inner_image > img{
+  width:100%;
+}
+.comesoon{
+  background-color:rgb(112, 199, 228);
+  width:100%;
+  height:616px;
+  padding:0px;
+}
+
+.shop_image div p{
+  color:white;
+}
+
+.shop1{
+  position:absolute;
+  width:400px;
 }
 
 /* index */
-.event_image{
-  display: inline-block;
-  padding-right:10px;
-}
+
 .event_area{
-  background:url("./img/bg1.png");
+  background: url(../img/bg1.png);
+  width:100%;
+  height:600px;
+  background-size:1200px;
+  background-position:center bottom;
+  position:relative;
 }
+
+.quiz_area{
+  background: url(../img/bg2.jpg);
+  width:100%;
+  height:200px;
+  margin-top:100px;
+  background-size:cover;
+  position:relative;
+}
+
+.center-align{
+  position:absolute;
+  padding:50px;
+  right:20%;
+}
+
+.suffer{
+  width:300px;
+  position:absolute;
+  right:20px;
+}
+
+#quiz{
+  padding:50px;
+}
+#quiz p{
+  font-size:20px;
+}
+
 #event{
   margin: 0px 50px;
+  width:400px;
+  height:40px;
   background-color:rgb(95, 204, 226);
  border-radius:20px;
+ display: inline-block;
+ font-size:23px;
 }
+
+#quiz_img{
+  background-image:url("../img/bg3.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100%;
+  height:800px;
+  position:relative;
+}
+
+#quiz_startbtn{
+  position:absolute;
+  top:60%;
+  left:43%;
+}
+/* join */
+
+#join form{
+  width:372px;
+  margin:0px;
+}
+#join{
+  width:350px;
+  text-align:left;
+}
+
+#join input[placeholder]{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin:-1px 10px;
+  width:350px;
+  padding:10px;
+}
+#photo{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin:-1px 10px;
+  width:350px;
+  padding:10px;
+}
+
+/* 포토랑, input 중복해결해야함 */
 
 #join_agree {
   text-align: left;
+}
+
+/* login */
+#signin{
+  width:320px;
+  margin:auto;
+
+}
+#signin input[placeholder]{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin:-1px 10px;
+  width:320px;
+  padding:10px;
+}
+#signjoin button{
+  border-radius:0px;
+  width:320px;
+  height:40px;
+  border:none;
+  letter-spacing: 2px;
+  font-size:12px;
+  background-color:rgb(95, 204, 226);
+  color:white;
+  font-size:15px;
 }
