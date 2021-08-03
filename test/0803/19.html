@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box {
+            margin-bottom: 50px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid transparent;
+        }
+
+        #b1 {
+            background-color: teal;
+            animation-name: shape;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shape {
+            from {
+                border: 1px solid transparent;
+            }
+
+            50% {
+                border: 1px solid #000;
+                border-radius: 50%;
+            }
+
+            to {
+                border: 1px solid #000;
+                border-radius: 50%
+            }
+        }
+
+        #b2 {
+            background-color: firebrick;
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+        }
+
+        @keyframes rotate {
+            form {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="box" id="b1"></div>
+        <div class="box" id="b2"></div>
+    </main>
+</body>
+
+</html>
