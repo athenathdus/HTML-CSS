@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script>
+
+        //예제 1
+        // a = parseInt(prompt("사과의개수입력"));
+        // p = parseInt(prompt("배의개수입력"));
+        // money = parseInt(prompt("지불할금액"));
+
+        // var result = money - ((a * 500) + (p * 600));
+        // document.write(result + "원");
+
+        //예제 2
+        // year = parseInt(prompt("출생년도 입력"));
+        // var arr = ["원숭이", "닭", "개", "돼지", "쥐", "소", "호랑이", "토끼", "용", "뱀", "말", "양"];
+        // var result = year % 12;
+        // console.log(result);
+        // document.write(arr[result]);
+
+
+        //예제3
+        function calc() {
+
+            var height = document.getElementById('height').value;
+            var weight = document.getElementById('weight').value;
+            var message = document.getElementById('result');
+            var BMI = height / weight;
+
+
+
+            if (height <= 140) {
+                result = "6급";
+            }
+            else if (height < 146) {
+                result = "5급";
+            }
+            else if (height < 159) {
+                result = "4급";
+            }
+            else if (height < 161) {
+                result = "3급";
+            }
+            else if (height < 204) {
+                result = "2급";
+            }
+            else
+                result = "4급";
+
+            document.write(result + "<br>");
+            document.write("BMI: " + BMI);
+
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <!-- 예제3 -->
+        <div>
+            <label for="height">키(cm)</label>
+            <input type="text" id="height" maxlength=3>
+        </div>
+        <div>
+            <label for="weight">몸무게(kg)</label>
+            <input type="text" id="weight" maxlength=3>
+        </div>
+        <button type="button" onclick="calc()">신체등급계산</button>
+        <div id="result"></div>
+
+    </main>
+</body>
+
+</html>

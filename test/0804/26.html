@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <input type="reset" value="취소">
+            <input type="submit" value="가입하기" onclick="checkAgree()">
+            <script>
+                function checkAgree() {
+
+                    var all = document.getElementById('agree_all');
+                    var terms = document.getElementById('agree_terms');
+
+                    console.log(all.checked, terms.checked)
+                }
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>
