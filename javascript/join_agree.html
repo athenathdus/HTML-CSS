@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./script.js"></script>
     <title>HTML 기본 문서</title>
 </head>
 
@@ -72,24 +73,15 @@
                 </div><br>
 
                 <div>
-                    <button type="reset" value="취소"></button>
-                    <button type="button" value="가입하기" onclick="checkAgree()"></button>
+                    <button type="reset" onclick="reset()">취소</button>
+                    <input type="submit" value="가입하기">
                     <script>
-                        function checkAgree() {
 
-                            var all = document.getElementById('agree_all');
-                            var terms = document.getElementById('agree_terms');
+                        let reset = (function () {
+                            console.log(2);
+                            location.href = "index.html"
+                        }());
 
-                            if (!all) {
-                                alert("이용약관동의해");
-                            }
-                            if (!terms) {
-                                alert("개인정보수집동의해");
-                            }
-
-
-                            console.log(all.checked, terms.checked)
-                        }
                     </script>
                 </div>
             </form>

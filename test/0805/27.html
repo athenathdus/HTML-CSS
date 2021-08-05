@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <main>
+
+        <button id="btn">click me</button>
+        <div id="box"></div>
+
+        <script>
+
+            var el = document.getElementById("box");
+            var btn = document.getElementById("btn");
+
+            var toggle = (function () {
+                var cnt = 0;
+
+                return function () {
+                    el.innerText = ++cnt;
+                };
+            }());
+
+            btn.onclick = toggle;
+
+            // 예제3
+            // var foo1 = (num) => {
+            //     return num * num;
+            // };
+
+            // var foo2 = (num) => { return num * num; };
+            // var foo3 = (num) => num * num;
+            // var foo4 = () => console.log("hello");
+
+            // console.log(foo1(2));
+            // console.log(foo1(3));
+            // console.log(foo1(4));
+            // foo4();
+
+            //예제2
+            // var foo = function (num) {
+            //     return num * num;
+            // }
+            // console.log(foo(3));
+
+            //예제1
+            // (function () {
+            //     console.log("hello world");
+            // }());
+
+            // var result = (function () {
+            //     return "hello world";
+            // }());
+
+            // console.log(result);
+        </script>
+    </main>
+</body>
+
+</html>

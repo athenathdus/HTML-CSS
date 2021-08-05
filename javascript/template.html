@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./script.js"></script>
     <meta charset="UTF-8">
     <title>HTML 기본 문서</title>
 
@@ -24,7 +25,16 @@
         </header>
 
         <nav class="clear">
-            <ul>
+
+            <div>
+                <script src="./script.js"></script>
+                <script>
+                    addMenu();
+                </script>
+
+
+            </div>
+            <!-- <ul>
                 <script>
                     var menu = ["EVENT", "ABOUT US", "SHOP", "NEWS", "CONTACT"];
                     var page = ["index", "about_us", "shop", "news", "contact"];
@@ -32,7 +42,7 @@
                         document.write('<li><a href="' + page[i] + '.html">' + menu[i] + '</a></li>');
                     }
                 </script>
-            </ul>
+            </ul> -->
         </nav>
 
         <aside>
