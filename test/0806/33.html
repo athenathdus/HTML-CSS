@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        #outer {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+        }
+
+        #inner {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+
+        textarea {
+            width: 500px;
+            height: 300px
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <textarea></textarea>
+    <div></div>
+
+    <script>
+        const box = document.querySelector('div');
+        const editor = document.querySelector('textarea');
+
+        const keyboardHandler = () => {
+            box.innerText = editor.value;
+        };
+
+        editor.addEventListener('keyup', keyboardHandler)
+    </script> -->
+    <!-- <script>
+        const contextMenuHandler = () => {
+            alert("우클릭금지");
+        }
+
+        document.addEventListener('contextmenu', contextMenuHandler);
+    </script> -->
+
+    <!-- <script>
+        window.addEventListener('load', function () {
+            alert('load Event');
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            alert('dom event');
+        });
+    </script>
+
+    <img src="../images/prod1.jpg"> -->
+
+    <!-- <button>버튼</button>
+
+    <label for="eventon">Event on</label>
+    <input id="eventon" type="checkbox">
+    <script>
+        const c1 = () => {
+            alert('clicked');
+        };
+
+        const checkBox = document.querySelector('input');
+        const btn = document.querySelector('button')
+        checkBox.addEventListener('click', () => {
+            if (chkeckBox.checked) {
+                btn.addEventListener('click', c1);
+            }
+            else {
+                btn.removeEventListener('click', c1);
+            }
+
+
+        });
+    </script> -->
+
+    <!-- <script>
+        const c1 = () => {
+            alert('첫번쨰 이벤트 핸들러');
+        }
+
+        const c2 = () => {
+            alert('두번쨰 이벤트 핸들러');
+        }
+
+        const btn = document.querySelector('button');
+        btn.addEventListener('click', c1);
+        btn.addEventListener('click', c2, true);
+-->
+    </script>
+    <div id="outer">
+        <div id="inner"></div>
+    </div>
+
+    <script>
+        const outer = document.querySelector('#outer');
+        const inner = document.querySelector('#inner');
+
+        outer.addEventListener('click', function (evt) {
+            alert('outer');
+            evt.stopPropagation();
+        }, true);
+        inner.addEventListener('click', function () {
+            alert('inner');
+        }, true);
+    </script>
+</body>
+
+</html>
